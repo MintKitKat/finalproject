@@ -1,0 +1,256 @@
+
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #E6E8E6;
+    display: grid;
+}
+
+img{
+    width: 100%;
+}
+
+h1{
+    color: #0C7C59;
+    margin: 5%;
+}
+h3{
+    color: #8AC926;
+
+}
+p{
+    color: #0C0C0C;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    flex-wrap: wrap;
+    height: 70px;
+    display: flex;
+    background-color: #0C0C0C;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+nav ul{
+    margin: auto;
+    width: 60%;
+    justify-content: space-between;
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li{
+    padding-top: 10px;
+    height: 35px;
+
+}
+
+.active{
+    box-shadow: 0px  5px 0px #0C7C59 ;
+    padding: 15px;
+
+}
+.active:hover{
+    background-color: #0C0C0C;
+}
+
+nav ul li a{
+    transition: background-color 0.3s ease-in-out;
+
+    text-decoration: none;
+    color: #8AC926;
+
+    padding: 30px;
+}
+
+
+nav ul li:hover a{
+    position: relative;
+    background-color: #0C7C59;
+    width: 100%;
+}
+
+
+header{
+    grid-column: 1/4;
+    grid-row: 2/3;
+    background-image: url("img/header.jpg");
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #0C0C0C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+header figure{
+    width: 30%;
+    margin: auto;
+}
+
+
+
+header form{
+    display: flex;
+    width: 50%;
+}
+
+header form input{
+    width: 75%;
+    height: 40px;
+    border-radius: 10px 0 0 10px;
+    margin: 0%;
+    border: none ;
+    background-color: rgba(255,255,255, 0.7);
+}
+
+header form button{
+    width: 18%;
+    margin: 0%;
+    height: 45px;
+    border-radius: 0 10px 10px 0;
+
+}
+
+main{
+    background-color: rgb(255,255,255, 0.5);
+    grid-column: 1/4;
+    width: 90%;
+    margin: auto;
+}
+
+.logo{
+    width: 20%;
+    margin: auto;
+    margin-top: 5%;
+}
+section{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+article{
+    flex-wrap: wrap;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+main section article figure{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 300px;
+    width: 30%;
+    min-width: 100px;
+
+    height: 170px;
+    overflow: hidden;
+
+}
+
+
+main section:first-of-type figure:hover img:hover{
+    transform:  translatey(-25px);
+}
+
+figcaption{
+    text-align: center;
+    color: #8AC926;
+    text-decoration: none;
+}
+
+
+footer{
+    background-color: rgb(0,0,0, 0.1);
+    grid-column: 1/4;
+
+}
+footer section{
+    display: flex;
+    justify-content: space-evenly;
+}
+footer article{
+    display: flex;
+    width: 30%;
+}
+footer article:first-of-type figure{
+    width: 50%;
+    max-width: 200px;
+    min-width: 150px;
+}
+footer article:last-of-type figure{
+    width: 20%;
+    max-width: 60px;
+    min-width: 40px;
+}
+
+
+footer p{
+    margin-right: 10%;
+    margin-bottom: 5%;
+    text-align: end;
+    color: rgb(255,255,255, 1);
+}
+
+
+@media screen and (min-width: 600px) {
+
+    body{
+        width: 100%;
+    }
+
+    nav{
+
+        width: 100%;
+    }
+
+    header form {
+        width: 80%;
+    }
+
+    main section article figure {
+        width: 40%;
+    }
+
+    main form {
+        width: 90%;
+    }
+
+    main form fieldset {
+        padding: 3%;
+    }
+
+    main form fieldset input {
+        width: 100%;
+    }
+
+    main form fieldset span input {
+        width: 100%;
+    }
+}

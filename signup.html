@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SignUp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+
+        main form{
+            margin: auto;
+            width: 70%;
+            max-width: 600px;
+            padding: 5%;
+        }
+
+        main form fieldset{
+            border: none;
+            border-radius: 10px;
+            padding: 5%;
+        }
+        input, label{
+            margin: 2%;
+        }
+
+        main form fieldset input{
+            width: 90%;
+            height: 40px;
+            border-radius: 10px;
+        }
+        main form fieldset span input{
+            width: 25%;
+        }
+        button{
+            display: block; 
+            margin: auto;    
+            width: 100px;
+            height: 50px;
+            justify-self: center;
+
+        }
+
+  </style>
+</head>
+<body>
+<nav>
+
+    <ul>
+
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="ofertas.html">Ofertas</a></li>
+        <li><a href="#" class="active">Signup</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+
+
+</nav>
+
+<header>
+
+    <form action="">
+        <input type="text" name="search" id="search">
+
+        <button type="submit">Search</button>
+    </form>
+
+</header>
+
+
+<main>
+
+    <form>
+        <figure class="logo"><img src="img/logo.png" alt="logo CodeConnectors"> </figure>
+        <fieldset>
+            <label for="name">Nombre:</label><br>
+            <input type="text" name="name" minlength="3" maxlength="16" required placeholder="Nombre" id="name"><br>
+            <label for="surname">Apellido:</label><br>
+            <input type="text" name="surname" minlength="3" maxlength="16" required placeholder="Apellido" id="surname"><br>
+
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" id="password">
+                
+                
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="coloque su email" id="email"><br>
+
+            <label for="telf">Teléfono</label>
+            <input type="number" required minlength="9" maxlength="9">
+
+            <label for="birth">Fecha de nacimiento:</label><br>
+            <span>
+            <input type="number" name="day" placeholder="day" id="day" required pattern="(0[1-9]|[12][0-9]|3[01])" minlength="2" maxlength="2">
+            <input type="number" name="month" placeholder="month" id="month" required pattern="0[1-9]|1[0-2]" minlength="2" maxlength="2">
+            <input type="number" name="year" placeholder="year" id="year" required pattern="(19[0-9]{2}|200[0-9]|201[0-4])" minlength="4" maxlength="4">  </span>              
+            <br>
+
+            <label for="gender">Género</label>
+            <select name="gender" id="gender">
+                <option></option>
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+                <option value="NB">Non Binary</option>
+            </select>
+            <br>
+
+    </fieldset>
+
+
+
+
+
+        <button type="submit">Registrarse</button>
+
+        <input type="checkbox" name="condiciones" id="Condiciones" required> <label for="condiciones">Acepto las Condiciones legales, del servicio y la Información básica de privacidad.</label>
+    </form>
+</main>
+
+<footer>
+    <section>
+
+        <article>
+            <figure>
+                <a href="#"><img src="img/appstore.png" alt="appstore icon"></a>
+            </figure>
+            <figure>
+                <a href="#"><img src="img/playstore.png" alt="playstro icon"></a>
+            </figure>
+        </article>
+
+        <article>
+            <figure class="logo"><img src="img/logo.png" alt="logo CodeConnectors"> </figure>
+        </article>
+        <article>
+            <figure>
+                <a href="#"><img src="img/icons-01.png" alt="Behance icon"></a></figure>
+            <figure><a href="#"><img src="img/icons-02.png" alt="WhatsApp icon"></a></figure>
+            <figure><a href="#"><img src="img/icons-03.png" alt="LinkedIn icon"></a></figure>
+            <figure><a href="#"><img src="img/icons-04.png" alt="Telegram icon"></a>
+            </figure>
+        </article>
+
+
+
+    </section>
+    <p>©Catalina Canales 2023</p>
+</footer>
+</body>
+
+</html>
